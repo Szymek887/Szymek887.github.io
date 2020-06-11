@@ -1,0 +1,9 @@
+Strona główna: 
+1. Co to są aplikacje webowe i czym różnią się od desktopowych.
+2. Przykład aplikacji webowej.
+
+Podstrony:
+1. Języki tworzenia aplikacji webowych
+2. Programy do projektowania aplikacji
+3. Serwery i serwlety
+4. Fronted i backend

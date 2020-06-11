@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Tworzenie aplikacji sieciowych</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="menu.js"></script>
+</head>
+<body>
+    <div class="menu">       
+            <div class="topnav" id="myTopnav">     
+                <a class="active" href="index.html" id="main">Home</a>
+                <a href="languagesHTML/main.html" id="langs">Języki tworzenia aplikacji internetowych</a>
+                <a href="serverHTML/main.html" id="servers">Serwery i serwlety</a>
+                <a href="endsHTML/main.html" id="ends">FrontEnd i BackEnd</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>        
+                </a>       
+            </div>
+            <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                  x.className += " responsive";
+                } else {
+                  x.className = "topnav";
+                }
+              }
+            </script>  
+    </div>
+    <div class="logo">
+        <img src="Home.png" alt="home">
+    </div>
+    <div class="body">    
+        <div class="content">
+            <h3>Czym są aplikacje webowe i czym różnią się od desktopowych?</h3>
+            <p>
+                Używając przeglądarki czy programów z pakietu Office używasz aplikacji zainstalowanych na komputerze. Potocznie o takich programach czy aplikacjach mówi się “aplikacje desktopowe”.
+                <br><br>
+                Możesz je zainstalować pobierając odpowiednie pliki z internetu lub z innego nośnika jak na przykład płyta CD. Podczas takiej instalacji pliki niezbędne do działania aplikacji zapisywane są na dysku komputera.
+                <br><br>
+                Aplikacje webowe, to zupełnie oddzielna grupa aplikacji. Nie są one instalowane na Twoim komputerze. Można powiedzieć, że są zainstalowane na serwerze, a Ty dostajesz się do nich za pośrednictwem internetu. Otwierając przeglądarkę internetową i wchodząc na stronę dostajesz się do aplikacji webowej. Jak już wspomniałem do działania takiej aplikacji potrzebny jest ów “magiczny” serwer.
+            </p>
+            <p>
+                Po prawej stronie pokazana jest przykładowa aplikacja napisana w języku JavaScript, która na podstawie naszej geolokalizacji pokazuje pogodę w danym, miejscu.
+            </p>
+        </div>
+        <div class="weather">
+            <div class="container">
+                <div class="app-title">
+                    <p>Weather</p>
+                </div>
+                <div class="notification"> </div>
+                <div class="weather-container">
+                    <div class="weather-icon">
+                        <img src="icons/unknown.png" alt="">
+                    </div>
+                    <div class="temperature-value">
+                        <p>- °<span>C</span></p>
+                    </div>
+                    <div class="temperature-description">
+                        <p> - </p>
+                    </div>
+                    <div class="location">
+                        <p>-</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <script src="app.js"></script>
+    </div>    
+    </div>
+    <div class="footer">
+        &copy; Strona wykonana przez Jakuba Szymczaka, Jakuba Mikę i Bartosza Sułowskiego
+    </div>
+</body>
+</html>

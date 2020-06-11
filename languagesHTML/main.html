@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Tworzenie aplikacji sieciowych</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="menu.js"></script>
+</head>
+<body>
+    <div class="menu">       
+            <div class="topnav" id="myTopnav">     
+                <a href="../index.html" id="main">Home</a>
+                <a class="active" href="main.html" id="langs">Języki tworzenia aplikacji internetowych</a>
+                <a href="../serverHTML/main.html" id="servers">Serwery i serwlety</a>
+                <a href="../endsHTML/main.html" id="ends">FrontEnd i BackEnd</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>        
+                </a>       
+            </div>
+            <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                  x.className += " responsive";
+                } else {
+                  x.className = "topnav";
+                }
+              }
+            </script>  
+    </div>
+    <div class="logo">
+        <img src="Home.png" alt="home">
+    </div>
+    <div class="body">    
+        <div class="content">
+            <h3>Języki, w których możemy tworzyć aplikacje sieciowe.</h3>
+            <p>
+                Aplikacje webowe mogą być napisane w wielu językach. Może to być Ruby, Python, PHP czy Java. Bynajmniej nie jest to kompletna lista :). Języków jest bardzo dużo, jednak mechanizm działania jest zawsze ten sam.
+                <br><br>
+                Aplikacja webowa napisana w języku X interpretuje żądanie wysłane przez przeglądarkę użytkownika do serwera i odpowiada na nie generując odpowiednią zawartość. Zawartość to plik generowany dynamicznie, który jest zrozumiały przez przeglądarkę internetową.
+                <br><br>
+                Zauważ, że taki sposób komunikacji pozwala na zastosowanie praktycznie dowolnego języka. W takiej sytuacji mówimy o protokole komunikacji. Protokole czyli zbiorze reguł, których przestrzeganie pozwoli się “dogadać” :).
+                <br><br>
+                Protokół ten używany jest w komunikacji pomiędzy klientem a serwerem. W tym przypadku klientem jest przeglądarka internetowa a serwerem jest aplikacja, która przetwarza żądanie wysłane przez klienta. W takim przypadku często też mówimy o aplikacjach typu klient-serwer.
+            </p>
+        </div>
+        <div class="weather">
+            <img src="images/jezyki.png" alt="jezyki">
+        </div>
+    </div>    
+    </>
+    <div class="footer">
+        &copy; Strona wykonana przez Jakuba Szymczaka, Jakuba Mikę i Bartosza Sułowskiego
+    </div>
+</body>
+</html>

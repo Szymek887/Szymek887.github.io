@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Tworzenie aplikacji sieciowych</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="menu.js"></script>
+</head>
+<body>
+    <div class="menu">       
+            <div class="topnav" id="myTopnav">     
+                <a href="../index.html" id="main">Home</a>
+                <a href="../languagesHTML/main.html" id="langs">Języki tworzenia aplikacji internetowych</a>
+                <a class="active" href="main.html" id="servers">Serwery i serwlety</a>
+                <a href="../endsHTML/main.html" id="ends">FrontEnd i BackEnd</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>        
+                </a>       
+            </div>
+            <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                  x.className += " responsive";
+                } else {
+                  x.className = "topnav";
+                }
+              }
+            </script>  
+    </div>
+    <div class="logo">
+        <img src="Home.png" alt="home">
+    </div>
+    <div class="body">    
+        <div class="content">
+            <h3>Zasada działania serwerów.</h3>
+            <p>
+                Słowo serwer ma wiele znaczeń. Jednym ze znaczeń tego słowa jest określenie maszyny, komputera. Serwerem możemy także nazywać aplikację, która jest na takim komputerze zainstalowana. Przykładem takich serwerów są Apache HTTP Server czy nginx.
+                <br><br>
+                Wymienione wyżej serwery to serwery HTTP (ang. Hypertext Transfer Protocol), ich zadaniem jest serwowanie stron internetowych.
+                <br><br>
+                Wpisując adres www.samouczekprogramisty.pl w okienku przeglądarki wysyłasz zapytanie HTTP do serwera firmy, w której wykupiłem taką usługę. Serwer ten widząc twoje zapytanie odpowiada treścią, która jest zrozumiała dla przeglądarki. Przeglądarka wyświetla następnie tę treść w formie strony internetowej.
+                <br><br>
+                W najprostszym przykładzie jakim jest serwer HTTP, serwer (aplikacja) w odpowiedzi wysyła zawartość plików znajdujących się na dysku serwera (komputera). W takim przypadku możemy mówić o serwowaniu plików statycznych.
+                <br><br>
+                Aplikacje webowe pokazują zawartość, która jest zmienna. Nie można jej uzyskać wyłącznie z plików statycznych znajdujących się na dysku serwera.
+                <br><br>
+            </p>
+            
+            <h3>Czym są serwlety?</h3>
+            <p>
+                Serwlet to serce aplikacji webowych napisanych w Javie. Serwlet to klasa, która wie w jaki sposób obsłużyć zapytanie wysłane do serwera. Potrafi też odpowiedzieć na to zapytanie.
+                <br><br>
+                Zasadę jego działania najłatwiej będzie wytłumaczyć na przykładzie rysunku:
+            </p>
+            <img src="images/Obslugazadaniawaplikacjiwebowej.jpeg" alt="server" id="schemat">
+            <p>
+                <ol>
+                    <li>wysłanie żądania z przeglądarki do serwera (maszyny)</li>
+                    <li>przekazanie żądania do kontenera serwletów/serwera aplikacji</li>
+                    <li>przetworzenie żądania przez serwlet/aplikację webową</li>
+                    <li>przekazanie odpowiedzi z kontenera serwletów do serwera</li>
+                    <li>wysłanie odpowiedzi do klienta (przeglądarki internetowej)</li>
+                </ol>
+            </p>
+        </div>
+        <div class="weather">
+            <img src="images/serverPhoto.jpg" alt="server">
+        </div>
+    </div>    
+    </>
+    <div class="footer">
+        &copy; Strona wykonana przez Jakuba Szymczaka, Jakuba Mikę i Bartosza Sułowskiego
+    </div>
+</body>
+</html>

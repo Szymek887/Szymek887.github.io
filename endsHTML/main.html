@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Tworzenie aplikacji sieciowych</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js"></script>
+</head>
+<body>
+    <div class="menu">       
+            <div class="topnav" id="myTopnav">     
+                <a href="../index.html" id="main">Home</a>
+                <a href="../languagesHTML/main.html" id="langs">Języki tworzenia aplikacji internetowych</a>
+                <a href="../serverHTML/main.html" id="servers">Serwery i serwlety</a>
+                <a class="active" href="main.html" id="ends">FrontEnd i BackEnd</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>        
+                </a>       
+            </div>
+            <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                  x.className += " responsive";
+                } else {
+                  x.className = "topnav";
+                }
+              }
+            </script>  
+    </div>
+    <div class="logo">
+        <img src="images/HomeEnds.png" alt="home">
+    </div>
+    <div class="body">    
+        <div class="content">
+            <h3>Co to jest FrontEnd?</h3>
+            <p>
+                Jeśli serwis WWW podzielimy na to, co widzi każdy użytkownik po wpisaniu domeny w wyszukiwarce i na to, czego nie zobaczy na pierwszy rzut oka, to frontend to ta widoczna część strony. Jego towarzyszem jest back-end – strażnik tego, by wszystko działało, jak należy. Podsumowując back-end dba o zapis i obróbkę danych, wprowadzanych przez userów. Dla porównania na frontend składa się zaś cały wygląd i możliwości strony, które pozwalają użytkownikowi na możliwie maksymalną interakcję. Interfejs strony, menu, grafiki, animacje, układ tekstu – te wyniki front-end zaciąga i wyświetla z backendu i to finalnie widzimy na ekranie monitora lub smartfona.
+            </p>
+            <h4>Co składa się na FrontEnd?</h4>
+            <p>
+                Specjalista IT w zakresie frontendu musi znać trzy najważniejsze języki kodowania, czyli HTML, CSS i JavaScript. Każdy z nich spełnia inne funkcje w programowaniu stron i aplikacji:
+                <ul>
+                    <li>HTML – opisuje cel i znaczenie wszystkich bloków strony,</li>
+                    <li>CSS – język arkuszy stylów (ang. style sheet language), który odpowiada za wygląd strony (kształty, położenie i kolory użytych elementów),</li>
+                    <li>JavaScript – idealny do programowania funkcjonalności, ścieżki zachowań użytkowników i sprawnego działania strony.</li>
+                </ul>    
+            </p>    
+            <p>    
+                W dużym uproszczeniu, HTML odpowiedzialny jest za zawartość strony WWW, CSS za to, jak wygląda, a JavaScript za to, jak działa.
+            </p>
+            <h3>Co to jest BackEnd?</h3>
+            <p>
+                Backend- czyli to czego nie widać po wejściu na stronę internetową, czyli całe jej zaplecze techniczne. Użytkownicy stron nie widzą panelu administracyjnego i całej struktury strony stworzonej przez webmastera. To właśnie to, co niewidoczne, ale niezbędne do funkcjonowania strony nazywamy backendem. Co to jest frontend? Zaraz wyjaśnimy.
+            </p>
+        </div>    
+        <div class="weather">
+            <img src="images/ends.png" alt="ends">
+        </div>
+    </div>    
+    <div class="footer">
+        &copy; Strona wykonana przez Jakuba Szymczaka, Jakuba Mikę i Bartosza Sułowskiego
+    </div>
+</body>
+</html>

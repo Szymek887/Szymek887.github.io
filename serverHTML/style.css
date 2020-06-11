@@ -1,0 +1,19 @@
+.body
+{
+    width: 100%;
+}
+
+.weather
+{
+    padding-top: 10px;
+}
+
+.weather img
+{
+    width: 100%;
+}
+
+#schemat
+{
+    width: 90%;
+}
